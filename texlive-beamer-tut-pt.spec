@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/portuguese/beamer
+# catalog-date 2007-03-05 14:17:42 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-beamer-tut-pt
 Version:	20070305
 Release:	1
@@ -46,6 +52,7 @@ TeXLive beamer-tut-pt package.
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/tutorialbeamer.pdf
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/tutorialbeamer.tex
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/ufpellogo.jpg
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ TeXLive beamer-tut-pt package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
