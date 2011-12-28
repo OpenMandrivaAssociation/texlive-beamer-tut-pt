@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.doc
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive beamer-tut-pt package.
@@ -52,7 +50,6 @@ TeXLive beamer-tut-pt package.
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/tutorialbeamer.pdf
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/tutorialbeamer.tex
 %doc %{_texmfdistdir}/doc/latex/beamer-tut-pt/ufpellogo.jpg
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,5 +60,3 @@ TeXLive beamer-tut-pt package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
