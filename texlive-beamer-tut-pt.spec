@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-beamer-tut-pt
 Version:	20070305
-Release:	5
+Release:	6
 Summary:	An introduction to the Beamer class, in Portuguese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/portuguese/beamer
