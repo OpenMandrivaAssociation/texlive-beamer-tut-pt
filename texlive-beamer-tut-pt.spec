@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-beamer-tut-pt
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	An introduction to the Beamer class, in Portuguese
 Group:		Publishing
