@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/portuguese/beamer
-# catalog-date 2007-03-05 14:17:42 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-beamer-tut-pt
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	An introduction to the Beamer class, in Portuguese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/portuguese/beamer
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.r15878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.doc.r15878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -53,24 +47,10 @@ TeXLive beamer-tut-pt package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070305-2
-+ Revision: 749556
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070305-1
-+ Revision: 717902
-- texlive-beamer-tut-pt
-- texlive-beamer-tut-pt
-- texlive-beamer-tut-pt
-- texlive-beamer-tut-pt
-
