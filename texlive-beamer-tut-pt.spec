@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	An introduction to the Beamer class, in Portuguese
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/portuguese/beamer
+URL:		https://www.ctan.org/tex-archive/info/portuguese/beamer
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beamer-tut-pt.doc.r%{version}.tar.xz
